@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03f95417-6ab1-432d-bf7c-b289c6099390" name="Changes" comment="Format and ide changes">
+    <list default="true" id="03f95417-6ab1-432d-bf7c-b289c6099390" name="Changes" comment="Made star handler for processing multiple star_polygon objects">
       <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/polygon_display.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polygon_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_polygon.py" beforeDir="false" afterPath="$PROJECT_DIR$/star_polygon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
     "Python.polygon_display.executor": "Run",
     "Python.polygon_handler.executor": "Run",
     "Python.polygon_manager.executor": "Run",
@@ -60,7 +59,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.polygon_display">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="star_polygons" />
       <option name="ENV_FILES" value="" />
@@ -178,7 +177,7 @@
       <updated>1710954253096</updated>
       <workItem from="1710954259811" duration="257000" />
       <workItem from="1710954530344" duration="76000" />
-      <workItem from="1710954623938" duration="8606000" />
+      <workItem from="1710954623938" duration="10392000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <option name="closed" value="true" />
@@ -204,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710959991110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made star handler for processing multiple star_polygon objects">
+      <option name="closed" value="true" />
+      <created>1710965349346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710965349346</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,21 +233,12 @@
     <MESSAGE value="Project init" />
     <MESSAGE value="Basic polygon logic" />
     <MESSAGE value="Format and ide changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Format and ide changes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Made star handler for processing multiple star_polygon objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made star handler for processing multiple star_polygon objects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/star_polygons$polygon_manager.coverage" NAME="polygon_handler Coverage Results" MODIFIED="1710962228152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/star_polygons$main.coverage" NAME="main Coverage Results" MODIFIED="1710965738809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/star_polygons$polygon_display.coverage" NAME="polygon_display Coverage Results" MODIFIED="1710965174414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/star_polygons$star_polygon.coverage" NAME="star_polygon Coverage Results" MODIFIED="1710956812456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
