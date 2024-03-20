@@ -1,7 +1,7 @@
 import math
 
 
-class StartPolygon:
+class StarPolygon:
 
     def __init__(self, val_n: int, val_step: int):
         self.n = val_n
@@ -13,6 +13,12 @@ class StartPolygon:
         self.points_position = self.calculate_points_position()
         self.sides = self.calc_sides_paths()
         self.sides_position = self.calc_sides_position()
+
+        self.scaler = 1
+        self.transform = (0, 0)
+
+    def __repr__(self):
+        return f'StarPolygon({self.n}, {self.step})'
 
     def calculate_points_position(self):
         points = []
@@ -61,9 +67,25 @@ class StartPolygon:
 
         return formatted_output
 
+    def get_points_real_position(self):
+        points = self.points_position
+
+        points_by_scale = [(a*self.scaler + self.transform[0], b*self.scaler + self.transform[1]) for a, b in points]
+
+        return points_by_scale
+
+    def get_sides_real_position(self):
+        sides = self.sides_position
+
+        sides_by_scale = [((a[0]*self.scaler + self.transform[0], a[1]*self.scaler + self.transform[1]),
+                           (b[0]*self.scaler + self.transform[0], b[1]*self.scaler + self.transform[1])) for a, b in sides]
+
+        return sides_by_scale
+
+
 
 if __name__ == '__main__':
-    star = StartPolygon(7, 2)
+    star = StarPolygon(7, 2)
     print(star.get_sides_by_loops())
-    star1 = StartPolygon(7, 5)
+    star1 = StarPolygon(7, 5)
     print(star1.get_sides_by_loops())
