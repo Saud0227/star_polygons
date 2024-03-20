@@ -3,7 +3,7 @@ import math
 
 class StartPolygon:
 
-    def __init__(self, val_n, val_step):
+    def __init__(self, val_n: int, val_step: int):
         self.n = val_n
         self.step = val_step
         self.loops = 1
@@ -60,6 +60,7 @@ class StartPolygon:
                 formatted_output[loop].append(self.sides[item + loop * number_per_loop])
 
         return formatted_output
+
 
 if __name__ == '__main__':
     star = StartPolygon(7, 2)
