@@ -4,7 +4,7 @@ from polygon_display import PolygonDisplay
 
 
 def prep_handler(item):
-    item.set_input([(10, 2), (10, 3)])
+    item.set_input([(10, 2), (10, 3), (10, 4)])
 
 
 def main():
