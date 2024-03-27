@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Polygons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="p5/p5.js"></script>
+    <script src="js/starPolygon.js"></script>
+    <script src="js/drawDot.js"></script>
+</head>
+
+<body>
+    <div id="main-content">
+        <header>
+            <h1>
+                Star Polygons
+            </h1>
+        </header>
+        <aside>
+            <!-- <h2>Options</h2> -->
+            <form class="generate-form">
+                <label for="sides">Number of Sides:</label>
+                <input type="number" name="sides" id="sides" min="3" max="100" required>
+                <label for="step">Step index:</label>
+                <input type="number" name="step" id="step" min="1" max="100" required>
+                <button type="submit">Generate</button>
+            </form>
+        </aside>
+        <div id="canvas-container">
+            <canvas id="star-polygon-canvas"></canvas>
+        </div>
+    </div>
+    <script src="js/sketch.js"></script>
+
+</body>
+
+</html>

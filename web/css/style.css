@@ -1,0 +1,107 @@
+@import url("https://use.typekit.net/vfu0oii.css");
+
+:root {
+    --magenta: #dd0890;
+    --ultraviolett:#4b0082;
+    --turkosmint:#0de1ec;
+    --ultramarin:#200c9c;
+    --granitgra:#f0f0f0;
+    --kolgra:#222222;
+    --andesitgra:#6F6D6D;
+}
+
+body {
+    font-family: soleto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--granitgra);
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+
+
+#main-content {
+    display: grid;
+    grid-template-columns: 15% auto;
+    height: 100vh;
+    grid-template-rows: 10% auto;
+    grid-template-areas: "header header" "sidebar content";
+    background-color: var(--kolgra);
+}
+
+#main-content > header {
+    grid-area: header;
+    background-color: #000000;
+    /* color: #fff; */
+    padding: 10px;
+}
+
+#main-content > header > h1 {
+    margin: 0;
+    /* padding-left: 10px; */
+}
+
+#main-content > aside {
+    grid-area: sidebar;
+    background-color: color-mix(in srgb, var(--kolgra) 70%, var(--andesitgra) 30%);
+    border-right: 1px solid var(--andesitgra);
+}
+
+#main-content > aside > h2{
+    margin: 0;
+    padding-left: 10px;
+}
+
+.generate-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.generate-form label {
+    color: var(--granitgra);
+    text-align: left;
+}
+
+.generate-form input {
+    -webkit-appearance: none;
+    padding: 10px;
+    border: 1px solid var(--andesitgra);
+    /* border-radius: 5px; */
+
+    margin: 0 0 10px 0;
+}
+
+.generate-form button {
+
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--ultraviolett), var(--magenta));
+    background-size: 500% 100%;
+    color: var(--granitgra);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.generate-form button:hover {
+    background-position: 100% 0;
+}
+
+#canvas-container {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--kolgra); */
+}

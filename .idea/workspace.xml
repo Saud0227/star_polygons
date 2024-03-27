@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03f95417-6ab1-432d-bf7c-b289c6099390" name="Changes" comment="Made star handler for processing multiple star_polygon objects">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="03f95417-6ab1-432d-bf7c-b289c6099390" name="Changes" comment="Moved to prep for p5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +56,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carljohan.stahl\PycharmProjects\star_polygons" />
+      <recent name="C:\Users\carljohan.stahl\PycharmProjects\star_polygons\python" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="star_polygons" />
@@ -163,7 +166,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -181,6 +184,7 @@
       <workItem from="1711018262004" duration="111000" />
       <workItem from="1711019097510" duration="1155000" />
       <workItem from="1711102558390" duration="7000" />
+      <workItem from="1711102624424" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <option name="closed" value="true" />
@@ -214,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710965349346</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moved to prep for p5">
+      <option name="closed" value="true" />
+      <created>1711102842477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711102842477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +249,8 @@
     <MESSAGE value="Basic polygon logic" />
     <MESSAGE value="Format and ide changes" />
     <MESSAGE value="Made star handler for processing multiple star_polygon objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made star handler for processing multiple star_polygon objects" />
+    <MESSAGE value="Moved to prep for p5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved to prep for p5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/star_polygons$polygon_display.coverage" NAME="polygon_display Coverage Results" MODIFIED="1710965174414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
