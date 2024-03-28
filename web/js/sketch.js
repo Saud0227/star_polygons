@@ -38,12 +38,15 @@ function setup() {
 
 function draw() {
 	background("#222222");
+	strokeWeight(3);
 
 	noFill();
 	stroke("#ffffff");
 	setLineDash([10, 10]);
 	ellipse(width/2, width/2, width, width);
 	resetLineDash();
+
+	stroke("#0de1ec")
 
 	for (let i = 0; i < drawDots.length; i++) {
 		drawDots[i].update();
