@@ -105,3 +105,18 @@ body {
     align-items: center;
     /* background-color: var(--kolgra); */
 }
+
+
+@media (max-width: 768px) {
+    #main-content {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% min-content auto;
+        grid-template-areas: "header" "sidebar" "content";
+    }
+
+    #main-content > aside {
+        border-right: none;
+        border-bottom: 1px solid var(--andesitgra);
+        padding-bottom: min(10px, 5vw);
+    }
+}

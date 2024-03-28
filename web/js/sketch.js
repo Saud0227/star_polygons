@@ -1,9 +1,12 @@
-let a = null
+let a = null;
+let drawDots = [];
 
 function setup() {
 	container = document.getElementById('canvas-container');
 
-	createCanvas(400, 400, document.getElementById('star-polygon-canvas'));
+	let sideSize = Math.min(container.offsetWidth, 600);
+
+	createCanvas(sideSize, sideSize, document.getElementById('star-polygon-canvas'));
 
 	let params = getURLParams();
 
@@ -13,11 +16,24 @@ function setup() {
 		a = new StarPolygon(int(params.sides), int(params.step));
 	}
 
+	if (params.speed == undefined) {
+		speed = 5;
+	} else {
+		speed = int(params.speed);
+	}
+
+	a.transform = [width/2, width/2];
+	a.scaler = width/2;
 
 
-	a.transform = [200, 200];
-	a.scaler = 400;
-	console.log(a);
+	loopsPos = a.getSidesByLoopsRealPosition();
+
+
+	for (let i = 0; i < loopsPos.length; i++) {
+		console.log(loopsPos[i]);
+		drawDots.push(new DotTrace(loopsPos[i], speed));
+	}
+
 }
 
 function draw() {
@@ -26,7 +42,13 @@ function draw() {
 	noFill();
 	stroke("#ffffff");
 	setLineDash([10, 10]);
-	ellipse(200, 200, 400, 400);
+	ellipse(width/2, width/2, width, width);
+	resetLineDash();
+
+	for (let i = 0; i < drawDots.length; i++) {
+		drawDots[i].update();
+		drawDots[i].draw();
+	}
 
 }
 
@@ -40,3 +62,22 @@ function resetLineDash() {
 }
 
 
+// --------------------------------------------------------
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlParams.entries());
+
+const sidesInput = document.getElementById('sides');
+const stepInput = document.getElementById('step');
+const speedInput = document.getElementById('speed');
+
+if (params.sides) {
+	sidesInput.value = params.sides;
+}
+if (params.step) {
+	stepInput.value = params.step;
+}
+if (params.speed) {
+	speedInput.value = params.speed;
+}

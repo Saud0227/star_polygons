@@ -22,9 +22,11 @@
             <!-- <h2>Options</h2> -->
             <form class="generate-form">
                 <label for="sides">Number of Sides:</label>
-                <input type="number" name="sides" id="sides" min="3" max="100" required>
+                <input type="number" name="sides" id="sides" min="3" max="1000" value="6" required>
                 <label for="step">Step index:</label>
-                <input type="number" name="step" id="step" min="1" max="100" required>
+                <input type="number" name="step" id="step" min="1" max="100" value="2" required>
+                <label for="speed">Speed</label>
+                <input type="number" name="speed" id="speed" min="1" max="50" value="5">
                 <button type="submit">Generate</button>
             </form>
         </aside>

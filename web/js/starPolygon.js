@@ -38,10 +38,11 @@ class StarPolygon {
 
         let sides = [];
         let n = 0;
-        this.loops = 0;
+        this.loops = 1;
         while (Object.keys(pointsNumber).length > 0) {
             let newN = (n + this.step) % this.n;
             if (!(n in pointsNumber)) {
+                console.log("Loop");
                 n = Number(Object.keys(pointsNumber)[0]);
                 this.loops++;
                 continue;
@@ -102,5 +103,15 @@ class StarPolygon {
             splittedSides.push(sides.slice(i, i + splitParts));
         }
         return splittedSides;
+    }
+
+    getPointsByLoopsRealPosition() {
+        let points = this.getPointsRealPosition();
+        let splitParts = Math.ceil(points.length / this.loops);
+        let splittedPoints = [];
+        for (let i = 0; i < points.length; i += splitParts) {
+            splittedPoints.push(points.slice(i, i + splitParts));
+        }
+        return splittedPoints;
     }
 }
