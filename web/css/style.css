@@ -119,4 +119,8 @@ body {
         border-bottom: 1px solid var(--andesitgra);
         padding-bottom: min(10px, 5vw);
     }
+
+    #main-content > #canvas-container {
+        padding-top: 20px;
+    }
 }
